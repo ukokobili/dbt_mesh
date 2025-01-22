@@ -1,0 +1,13 @@
+dbt_mesh:
+  outputs:
+    dev:
+      type: duckdb
+      path: "md:raw?motherduck_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uIjoidWtva29iaWxpLmphY29iLmdtYWlsLmNvbSIsImVtYWlsIjoidWtva29iaWxpLmphY29iQGdtYWlsLmNvbSIsInVzZXJJZCI6ImU2OTAwYWJjLWVjNDYtNGUxOS05ZWI2LTE1Y2Y4NjlmYzkzYSIsImlhdCI6MTcxMjYwOTY4OCwiZXhwIjoxNzQ0MTY3Mjg4fQ.YyMp4Fp6zqW54gQbcZWXC0pGUh8gWtqSBCBtCReNVps"
+      threads: 1
+
+    prod:
+      type: duckdb
+      path: "md:analytics?motherduck_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uIjoidWtva29iaWxpLmphY29iLmdtYWlsLmNvbSIsImVtYWlsIjoidWtva29iaWxpLmphY29iQGdtYWlsLmNvbSIsInVzZXJJZCI6ImU2OTAwYWJjLWVjNDYtNGUxOS05ZWI2LTE1Y2Y4NjlmYzkzYSIsImlhdCI6MTcxMjYwOTY4OCwiZXhwIjoxNzQ0MTY3Mjg4fQ.YyMp4Fp6zqW54gQbcZWXC0pGUh8gWtqSBCBtCReNVps"
+      threads: 4
+
+  target: dev
